@@ -1,7 +1,8 @@
 import { Routes, Route, Link } from 'react-router-dom'
 
 import FunctionBasedHome from './pages/FunctionBasedHome'
-import ClassedBasedHome from './pages/ClassedBasedHome'
+import ClasseBasedHome from './pages/ClasseBasedHome'
+import ClasseBasedBarChart from './pages/ClasseBasedBarChart'
 
 import HomePage from './pages/Home'
 
@@ -20,14 +21,18 @@ function App() {
                         <Link to='/home-function'>FunctionBasedHome</Link>
                     </li>
                     <li>
-                        <Link to='/home-class'>ClassedBasedHome</Link>
+                        <Link to='/home-class'>ClasseBasedHome</Link>
+                    </li>
+                    <li>
+                        <Link to='/barchart-class'>ClasseBasedBarChart</Link>
                     </li>
                 </ul>
             </nav>
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='/home-function' element={<FunctionBasedHome />} />
-                <Route path='/home-class' element={<ClassedBasedHome />} />
+                <Route path='/home-class' element={<ClasseBasedHome />} />
+                <Route path='/barchart-class' element={<ClasseBasedBarChart />} />
             </Routes>
         </div>
     )

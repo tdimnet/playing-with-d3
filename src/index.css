@@ -14,11 +14,21 @@ code {
 
 
 /* Garbage */
+.barchart-main-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .high-temperatures {
     color: red;
 }
 
 .low-temperatures {
     color: blue;
+}
+
+.canvas {
+    border: 1px solid black;
 }
 
