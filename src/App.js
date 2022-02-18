@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import FunctionBasedHome from './pages/FunctionBasedHome'
 import ClasseBasedHome from './pages/ClasseBasedHome'
 import ClasseBasedBarChart from './pages/ClasseBasedBarChart'
+import FunctionBasedBarChart from './pages/FunctionBasedBarChart'
 
 import HomePage from './pages/Home'
 
@@ -26,6 +27,9 @@ function App() {
                     <li>
                         <Link to='/barchart-class'>ClasseBasedBarChart</Link>
                     </li>
+                    <li>
+                        <Link to='/barchart-function'>FunctionBasedBarChart</Link>
+                    </li>
                 </ul>
             </nav>
             <Routes>
@@ -33,6 +37,7 @@ function App() {
                 <Route path='/home-function' element={<FunctionBasedHome />} />
                 <Route path='/home-class' element={<ClasseBasedHome />} />
                 <Route path='/barchart-class' element={<ClasseBasedBarChart />} />
+                <Route path='/barchart-function' element={<FunctionBasedBarChart />} />
             </Routes>
         </div>
     )
