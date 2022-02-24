@@ -5,6 +5,7 @@ import ClasseBasedHome from './pages/ClasseBasedHome'
 import ClasseBasedBarChart from './pages/ClasseBasedBarChart'
 import FunctionBasedBarChart from './pages/FunctionBasedBarChart'
 import FunctionBasedCircle from './pages/FunctionBasedCircle'
+import FunctionThreeJSGlobe from './pages/FunctionThreeJSGlobe'
 
 import HomePage from './pages/Home'
 
@@ -34,6 +35,9 @@ function App() {
                     <li>
                         <Link to='/circle-function'>FunctionBasedCircle</Link>
                     </li>
+                    <li>
+                        <Link to='/threejs-globe-function'>FunctionThreeJSGlobe</Link>
+                    </li>
                 </ul>
             </nav>
             <Routes>
@@ -43,6 +47,7 @@ function App() {
                 <Route path='/barchart-class' element={<ClasseBasedBarChart />} />
                 <Route path='/barchart-function' element={<FunctionBasedBarChart />} />
                 <Route path='/circle-function' element={<FunctionBasedCircle />} />
+                <Route path='/threejs-globe-function' element={<FunctionThreeJSGlobe />} />
             </Routes>
         </div>
     )
